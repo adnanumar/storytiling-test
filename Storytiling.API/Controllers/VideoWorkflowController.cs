@@ -39,7 +39,6 @@ namespace Storytiling.API.Controllers
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
         {
-            throw new Exception();
             var response = await _videoWorkflowService.GetAllAsync(cancellationToken);
             return Ok(response);
         }
